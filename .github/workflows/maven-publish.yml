@@ -55,8 +55,10 @@ jobs:
       
     - name: unit test
       run: mvn test
-
-
+      
+    - name: debug artifact
+      run: ls target/
+    
 
     - name: build docker image
       run: docker build -t adityaverticurl/myapp .
